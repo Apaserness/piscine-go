@@ -4,7 +4,7 @@ import "github.com/01-edu/z01"
 
 func main() {
 	var l = 'z'
-	for l >='a' {
+	for l >= 'a' {
 		z01.PrintRune(l)
 		l--
 	}
