@@ -8,5 +8,5 @@ func main() {
 		z01.PrintRune(l)
 		l--
 	}
-	z01.PrintRune('\n')
+	z01.PrintRune('a')
 }
