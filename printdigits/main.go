@@ -5,8 +5,8 @@ import "fmt"
 func main() {
 	d := 0
 	for d <= 9 {
-		fmt.Println(d)
+		z01.PrintRune(d)
 		d++
 	}
-	fmt.Println('\n')
+	z01.PrintRune('\n')
 }
