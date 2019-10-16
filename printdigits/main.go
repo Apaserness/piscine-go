@@ -5,7 +5,7 @@ import "github.com/01-edu/z01"
 func main() {
 	d := 0
 	for d <= 9 {
-		fmt.Println(d)
+		z01.PrintRune(d)
 		d++
 	}
 	z01.PrintRune('\n')
