@@ -6,7 +6,7 @@ func main() {
 	i := 122
 	for i > 96 {
 		z01.PrintRune(rune(i))
-		aRune--
+		i--
 	}
 	z01.PrintRune(10)
 }
