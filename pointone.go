@@ -1,4 +1,6 @@
-package piscine
+package main
+
+import "piscine"
 
 import "fmt"
 
