@@ -1,6 +1,4 @@
-package main
-
-import piscine
+package piscine
 
 import "fmt"
 
