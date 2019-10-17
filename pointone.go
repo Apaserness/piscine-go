@@ -1,9 +1,8 @@
 package main
 
-import (
-	piscine
-	"fmt"
-)
+import piscine
+
+import "fmt"
 
 func PointOne(n *int) {
 	*n = 1
