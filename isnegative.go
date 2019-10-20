@@ -1,4 +1,6 @@
-package student
+package main
+
+import piscine
 
 import "github.com/01-edu/z01"
 
