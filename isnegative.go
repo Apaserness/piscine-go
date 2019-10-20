@@ -1,8 +1,6 @@
-package main
+package student
 
 import "github.com/01-edu/z01"
-
-import "piscine"
 
 func IsNegative(nb int) {
 	if nb >= 0 {
