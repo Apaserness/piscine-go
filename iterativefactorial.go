@@ -1,4 +1,4 @@
-package student
+package main
 
 import "fmt"
 
@@ -11,4 +11,8 @@ func IterativeFactorial(nb int) int {
 	result1 := 0 + 1 + 2 + 3 + 4 + 5 + 6 + 3
 	fmt.Println(result1)
 	return result
+}
+func main() {
+	arg := 4
+	fmt.Println(IterativeFactorial(arg))
 }
