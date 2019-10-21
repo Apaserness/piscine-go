@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func IterativeFactorial(nb int) int {
 	if nb >= 1 && nb < 20 {
 		result := 1
@@ -14,8 +12,4 @@ func IterativeFactorial(nb int) int {
 	} else {
 		return 0
 	}
-}
-func main() {
-	arg := 4
-	fmt.Println(IterativeFactorial(arg))
 }
