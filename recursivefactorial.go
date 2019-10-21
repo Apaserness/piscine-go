@@ -1,4 +1,4 @@
-package main
+package student
 
 func RecursiveFactorial(nb int) int {
 	if nb >= 1 && nb < 20 {
