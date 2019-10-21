@@ -1,4 +1,4 @@
-package piscine
+package student
 
 func IterativePower(nb int, power int) int {
 	if power < 0 {
