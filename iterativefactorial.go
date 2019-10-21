@@ -1,6 +1,6 @@
 package piscine
 
-import "fmt"
+import "github.com/01-edu/z01"
 
 func IterativeFactorial(nb int) int {
 	result := 0
@@ -14,5 +14,5 @@ func IterativeFactorial(nb int) int {
 func main() {
 
 	result1 := 0 + 1 + 2 + 3 + 4 + 5 + 6 + 3
-	fmt.Println(result1)
+	z01.PrintRune(result1)
 }
