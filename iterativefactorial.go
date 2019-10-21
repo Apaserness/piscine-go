@@ -1,4 +1,4 @@
-package main
+package student
 
 func IterativeFactorial(nb int) int {
 	if nb >= 1 && nb < 20 {
