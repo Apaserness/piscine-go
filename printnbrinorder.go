@@ -19,7 +19,6 @@ func PrintNbrInOrder(n int) {
 				t := k[i]
 				k[i] = k[j]
 				k[j] = t
-
 			}
 		}
 	}
