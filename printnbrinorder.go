@@ -1,4 +1,4 @@
-package student
+package piscine
 
 import "github.com/01-edu/z01"
 
@@ -19,9 +19,11 @@ func PrintNbrInOrder(n int) {
 				t := k[i]
 				k[i] = k[j]
 				k[j] = t
+
 			}
 		}
 	}
 	for i := range k {
 		z01.PrintRune(rune(48 + k[i]))
+	}
 }
