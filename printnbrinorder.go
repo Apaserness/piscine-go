@@ -3,6 +3,7 @@ package student
 import "github.com/01-edu/z01"
 
 func PrintNbrInOrder(n int) {
+	var k []int
 	if n == 0 {
 		k = append(k, n) //prisvoit
 	}
