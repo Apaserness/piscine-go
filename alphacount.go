@@ -7,9 +7,9 @@ func AlphaCount(str string) int {
 		len = i
 	}
 	for i := 0; i <= len; i++ {
-		result++
+		counter++
 		if !(str[i] >= 'A' && str[i] <= 'Z') && !(str[i] >= 'a' && str[i] <= 'z') {
-			result--
+			counter--
 		}
 	}
 	return counter
