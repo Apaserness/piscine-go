@@ -1,13 +1,13 @@
-package student
+package piscine
 
-func ToUpper(s string) string {
-	srunes := []rune(s)
-	var res rune
-	for i := 0; i < len(s); i++ {
-		if srunes[i] >= 'a' && srunes[i] <= 'z' {
-			res = srunes(s[i] - 32)
-			srunes[i] = res
+func ToUpper(k string) string {
+	le := []rune(k)
+	for index, str := range le {
+		if str >= 'a' && str <= 'z' {
+			le[index] = str - 32
 		}
+
 	}
-	return string(srunes)
+	return string(le)
+
 }
