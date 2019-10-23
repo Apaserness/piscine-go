@@ -1,47 +1,33 @@
 package piscine
 
 func Index(s string, toFind string) int {
-	runes := []rune(s)
-	letfind := []rune(toFind)
-	n := rulen(letfind)
-
-	switch {
-	case n == 0:
+	sS := []rune(s)
+	sF := []rune(toFind)
+	kS := 0
+	kF := 0
+	for index := range sF {
+		index = index
+		kF++
+	}
+	if kF == 0 {
 		return 0
-	case n == 1:
-		return IndexRune(s, letfind[0])
 	}
-
-	if rulen(runes) < rulen(letfind) {
-		return -1
+	for index := range sS {
+		index = index
+		kS++
 	}
-
-	for i := range runes {
-		if letfind[0] == runes[i] {
-			flag := false
-			for j := range letfind {
-				if runes[i+j] == letfind[j] {
-					flag = true
-				} else {
-					flag = false
+	for index, letter := range sS {
+		if letter == sF[0] && kS >= kF+index-1 {
+			m := 1
+			for i := 1; i < kF; i++ {
+				if sF[i] == sS[index+i] {
+					m++
 				}
 			}
-
-			if flag {
-				return i
+			if m == kF {
+				return index
 			}
 		}
 	}
-
-	return -1
-}
-
-func IndexRune(s string, r rune) int {
-	for i, ch := range []rune(s) {
-		if ch == r {
-			return i
-		}
-	}
-
 	return -1
 }
