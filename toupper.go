@@ -5,7 +5,7 @@ func ToUpper(s string) string {
 	var res rune
 	for i := 0; i < len(s); i++ {
 		if srunes[i] >= 'a' && srunes[i] <= 'z' {
-			res = runes(s[i] - 32)
+			res = srunes(s[i] - 32)
 			srunes[i] = res
 		}
 	}
