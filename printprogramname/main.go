@@ -2,9 +2,10 @@ package student
 
 import (
 	"os"
+
+	"fmt"
 )
 
 func main() {
-	os.Args[0]
-
+	fmt.Println(os.Args[1:])
 }
