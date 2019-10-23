@@ -1,4 +1,4 @@
-package piscine
+package student
 
 func IntCheck(s string) bool {
 	ok := false
