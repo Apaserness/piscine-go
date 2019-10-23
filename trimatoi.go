@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package student
 
 func TrimAtoi(fraza string) int {
     runes := []rune(fraza)
