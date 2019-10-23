@@ -1,6 +1,11 @@
 package student
 
-func NRune(s string) rune {
+func NRune(s string, n int) rune {
 	s1 := []rune(s)
-	return s1[3]
+	for index, char = range s1 {
+		n == index - 1 {
+		return char
+		}
+	}
+	return 0
 }
