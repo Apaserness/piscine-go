@@ -3,7 +3,7 @@ package piscine
 func Index(s string, toFind string) int {
 	runes := []rune(s)
 	letfind := []rune(toFind)
-	n := RuneLen(letfind)
+	n := rulen(letfind)
 
 	switch {
 	case n == 0:
@@ -12,7 +12,7 @@ func Index(s string, toFind string) int {
 		return IndexRune(s, letfind[0])
 	}
 
-	if RuneLen(runes) < RuneLen(letfind) {
+	if rulen(runes) < rulen(letfind) {
 		return -1
 	}
 
