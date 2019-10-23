@@ -1,26 +1,26 @@
-package student
+package piscine
 
 func Index(s string, toFind string) int {
 	runes := []rune(s)
-	runesToFind := []rune(toFind)
-	n := RuneLen(runesToFind)
+	letfind := []rune(toFind)
+	n := RuneLen(letfind)
 
 	switch {
 	case n == 0:
 		return 0
 	case n == 1:
-		return IndexRune(s, runesToFind[0])
+		return IndexRune(s, letfind[0])
 	}
 
-	if RuneLen(runes) < RuneLen(runesToFind) {
+	if RuneLen(runes) < RuneLen(letfind) {
 		return -1
 	}
 
 	for i := range runes {
-		if runesToFind[0] == runes[i] {
+		if letfind[0] == runes[i] {
 			flag := false
-			for j := range runesToFind {
-				if runes[i+j] == runesToFind[j] {
+			for j := range letfind {
+				if runes[i+j] == letfind[j] {
 					flag = true
 				} else {
 					flag = false
