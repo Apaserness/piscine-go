@@ -1,7 +1,7 @@
 package student
 
 func TrimAtoi(fraza string) int {
-    runes := []rune(fraza)
+	runes := []rune(fraza)
     sign := 1
     result := 0
     foundDigit := false
@@ -13,7 +13,7 @@ func TrimAtoi(fraza string) int {
                 sign = 1
             }
         }
-        if r >= '0' && r <= '9' {
+		if r >= '0' && r <= '9' {
             foundDigit = true
             result = 10*result + int(r-'0')
         }
