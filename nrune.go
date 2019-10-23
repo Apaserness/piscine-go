@@ -1,6 +1,6 @@
 package student
 
-func FirstRune(s string) rune {
+func NRune(s string) rune {
 	s1 := []rune(s)
 	return s1[3]
 }
