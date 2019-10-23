@@ -1,4 +1,4 @@
-package piscine
+package student
 
 func ToUpper(k string) string {
 	le := []rune(k)
