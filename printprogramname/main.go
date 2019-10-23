@@ -3,9 +3,13 @@ package student
 import (
 	"os"
 
-	"fmt"
+	"github.com/01-edu/z01"
 )
 
 func main() {
-	fmt.Println(os.Args[1:])
+	name := []rune(os.Args[0])
+	for _, r := range name {
+		z01.PrintRune(r)
+	}
+	z01.PrintRune('\n')
 }
