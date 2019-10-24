@@ -1,11 +1,21 @@
-package student
+package students
 
 import (
-	"fmt"
 	"os"
+
+	"github.com/01-edu/z01"
 )
 
 func main() {
-	arguments := os.Args[1:]
-	fmt.Println(arguments)
+
+	for _, r := range os.Args[1:] {
+		PrintRuneArray([]rune(r))
+		z01.PrintRune(10)
+	}
+
+}
+func PrintRuneArray(runes []rune) {
+	for _, ch := range runes {
+		_ = z01.PrintRune(ch)
+	}
 }
