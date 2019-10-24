@@ -1,6 +1,6 @@
 package student
 
-func AppendRange(min, max int) []int {
+func MakeRange(min, max int) []int {
 	if max <= min {
 		return nil
 	}
