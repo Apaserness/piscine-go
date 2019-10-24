@@ -5,7 +5,7 @@ func MakeRange(min, max int) []int {
 		return nil
 	}
 
-	lice = make([]int, max-min)
+	lice := make([]int, max-min)
 	index := 0
 	for k := range lice {
 		lice[k] = min + index
